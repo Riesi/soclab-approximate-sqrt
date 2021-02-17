@@ -1,0 +1,6 @@
+read -vhdl approx_root_engine.vhd CSM2.vhd CSM_beh2.vhd
+verific -import -all
+opt
+techmap
+opt -full
+synth -top approx_root_engine

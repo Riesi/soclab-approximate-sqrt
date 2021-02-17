@@ -1,0 +1,6 @@
+read -vhdl approx_root_engine.vhd LS_beh_square.vhd
+verific -import -all
+opt
+techmap
+opt -full
+synth -top approx_root_engine
